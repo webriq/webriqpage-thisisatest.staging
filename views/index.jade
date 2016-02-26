@@ -1,0 +1,217 @@
+extends layout
+
+block content
+	div
+	header.header#header
+		div.container
+			figure.logo.animated.fadeInDown.delay-07s
+					a(href="#")
+						img(src="img/logo.png", alt="")
+			h1.animated.fadeInDown.delay-07s Welcome To Knight Studios
+			ul.we-create.animated.fadeInUp.delay-1s
+				li We are a digital agency that loves crafting beautiful websites.
+
+			a(class="waves-effect waves-light btn-large animated fadeInUp delay-1s", href="#") Get Started
+
+	nav#test.main-nav-outer
+		.container
+			ul.main-nav
+				li
+					a(href='#header') Home
+				li
+					a(href='#service') Services
+				li
+					a(href='#client_outer') Clients
+				li.small-logo
+					a(href='#header')
+						img(src='../img/small-logo.png', alt='')
+				li
+					a(href='#news') News
+				li
+					a(href='#partners') Partners
+				li
+					a(href='#contact') Contact
+			a.res-nav_click(href='#')
+				i.fa-bars
+
+	section#service.main-section
+		.container
+				h2 Services
+				h6 We offer exceptional service with complimentary hugs.
+				.row
+					.col-lg-4.col-sm-6.wow.fadeInLeft.delay-05s
+						.service-list
+							.service-list-col1
+								i.fa-paw
+							.service-list-col2
+								h5 branding &amp; identity
+								p Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.
+						.service-list
+							.service-list-col1
+								i.fa-gear
+							.service-list-col2
+								h5 web development
+								p Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .
+						.service-list
+							.service-list-col1
+								i.fa-apple
+							.service-list-col2
+								h5 mobile design
+								p Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.
+						.service-list
+							.service-list-col1
+								i.fa-medkit
+							.service-list-col2
+								h5 24/7 Support
+								p Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.
+					figure.col-lg-8.col-sm-6.text-right.wow.fadeInUp.delay-02s
+						img(src='../img/macbook-pro.png', alt='')
+
+	section.main-section.alabaster
+		.container
+			.row
+				figure.col-lg-5.col-sm-4.wow.fadeInLeft
+					img(src='../img/iphone.png', alt='')
+				.col-lg-7.col-sm-8.featured-work
+					h2 featured work
+					p.padding-b	Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.
+					.featured-box
+						.featured-box-col1.wow.fadeInRight.delay-02s
+							i.fa-magic
+						.featured-box-col2.wow.fadeInRight.delay-02s
+							h5 magic of theme development
+							p Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+					.featured-box
+						.featured-box-col1.wow.fadeInRight.delay-04s
+							i.fa-gift
+						.featured-box-col2.wow.fadeInRight.delay-04s
+							h5 neatly packaged
+							p Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+					.featured-box
+						.featured-box-col1.wow.fadeInRight.delay-06s
+							i.fa-dashboard
+						.featured-box-col2.wow.fadeInRight.delay-06s
+							h5 SEO optimized
+							p Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+					a.Learn-More(href='#') Learn More
+
+	section#client_outer.main-section
+			h2 Happy Clients
+			.client_area
+				.client_section.animated.fadeInUp.wow
+					.client_profile
+						.client_profile_pic
+							img(src='../img/client-pic1.jpg', alt='')
+						h3 Saul Goodman
+						span Lawless Inc
+
+					.quote_section
+						.quote_arrow
+						p
+							b
+								img(src='../img/quote_sign_left.png', alt='')
+							p Persteadfadf iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+							small
+								img(src='../img/quote_sign_right.png', alt='')
+					.clear
+				.client_section.animated.fadeInDown.wow
+					.client_profile.flt
+						.client_profile_pic
+							img(src='../img/client-pic2.jpg', alt='')
+						h3 Marie Schrader
+						span DEA Foundation
+					.quote_section.flt
+						.quote_arrow2
+						p
+							b
+								img(src='../img/quote_sign_left.png', alt='')
+							p Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+							small
+								img(src='../img/quote_sign_right.png', alt='')
+					.clear
+	section#news
+		.container
+			h2.wow.fadeInUp.delay-0s Lates News
+			h6 Proin iaculis purus consequat sem cure digni ssim.
+			.row
+				div.lazy-wrapper.wow.fadeInUp.delay-0s
+				.clear
+
+	section#partners
+		.container.wow.fadeIn.delay-0s
+			h2	Our Partners
+			h6	We're distributing millions of dollars every week to campaigners around the world.<br> Whether you're raising 500 dollars or 5 million euros.
+			.row
+				.col-lg-12
+					ul#partner-list
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner3.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner4.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner5.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner6.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner7.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner8.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner9.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner10.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner11.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner12.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner13.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner15.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner16.jpg')
+						li.wow.zoomIn
+							a(href='#', style='display:none;') BAT Boll
+							figure
+								a(href='#')
+									img(alt='', src='../img/partners/img-partner17.jpg')
+
