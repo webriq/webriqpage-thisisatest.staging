@@ -85,13 +85,36 @@ p{
 	margin:0;
 }
 
+.main-continer .container{
+	padding:40px 15px;
+}
+.main-continer .container p{
+	margin:0px 0px 10px;
+
+}
+
 /* Header Styles
 ---------------------------------*/
 
 .header{
 	text-align:center;
-	background:url(../img/pw_maze_black_2X.png) left top repeat;
+	background:url(../img/bg2.jpg) left top repeat;
 	padding:100px 0 160px 0;
+}
+.header .container ul li,.header .container h1{
+	color:#fff;
+	text-shadow:2px 1px 1px #222;
+	-webkit-text-shadow:2px 1px 1px #222;
+}
+.header::before{
+	content: "";
+	width:100%;
+	top:0px;
+	left:0px;
+	height:100%;
+	background:url(../img/bg3.png) left top repeat;
+	position:absolute;
+	z-index: 0;
 }
 .logo{
 	width:130px;
@@ -699,9 +722,9 @@ color: #fff;
 }
 
 .res-nav_click {
-	line-height:38px;
+	line-height:38px !important;
 	font-family: 'FontAwesome';
-	font-size:38px;
+	font-size:38px !important;
 	text-decoration: none !important;
 	color:#777777;
 	font-style:normal;
@@ -715,7 +738,7 @@ color: #fff;
 }
 
 .res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
-	color: #7cc576 !important;
+	color: #26A69A !important;
 }
 
 .portfolioContainer{
