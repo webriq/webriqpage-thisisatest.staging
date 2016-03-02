@@ -7736,7 +7736,7 @@ small {
 }
 
 .card.small .card-content, .card.medium .card-content, .card.large .card-content {
-  max-height: 40%;
+  max-height: 100%;
   overflow: hidden;
 }
 
@@ -7754,7 +7754,7 @@ small {
 }
 
 .card.medium {
-  height: 400px;
+  height: 450px;
 }
 
 .card.large {

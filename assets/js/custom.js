@@ -42,7 +42,10 @@ $(function(){
 				isIsotope: true,
 				isotopeResize: 4
 
+
+
 		});
+
 
 		var $container = $('.lazy-wrapper');
 

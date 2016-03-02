@@ -801,6 +801,10 @@ color: #fff;
     -o-box-sizing: border-box;
 }
 
+.lazy-wrapper .lazyItem .card{
+	margin:0px;
+}
+
 .lazy-wrapper .lazyItem {
     margin: 5px;
     background: #fff;

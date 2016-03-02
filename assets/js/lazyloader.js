@@ -33,8 +33,11 @@
                     _init: function(){
 						var obj = this;
                         obj.more_wrapper = $('<div class="lazy-more-wrapper">').appendTo(obj.elem);
+
                         if(s.mode == 'click')
                             obj.more_btn = $('<a class="lazy-more-btn waves-effect waves-light btn-large">'+s.more_caption+'</a>').appendTo(obj.more_wrapper);
+
+
 
                         obj.pages = Math.ceil(s.records/s.limit);
 
@@ -111,6 +114,7 @@
                                     success: function(data){
                                         obj.items = $.parseJSON(data).items;
                                         obj._append_content();
+
                                     }
                                 });
                             }
@@ -133,11 +137,13 @@
                                 $(elms).hide().appendTo(obj.elem).fadeIn(1000);
                                 obj.elem.removeClass('loading').addClass('loaded');
                                 $('.lazyItem', obj.elem).addClass('loaded');
+
                             }
 
                             s.offset++;
                             obj.more_wrapper.fadeOut();
                             obj.loading = false;
+
                         }
                     }
                 }
