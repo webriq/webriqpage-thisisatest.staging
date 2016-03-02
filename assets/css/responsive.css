@@ -45,7 +45,7 @@
 
 @media only screen and (max-width: 767px) {
 	/****Mobile Landscape 480 Container 100% ****/
-	body{ font-size:12px;}
+	body{font-size:13px;}
 	h2{ font-size:26px;}
 	h3{ font-size:14px;}
 	h6{ font-size:16px; margin-bottom:40px;}
@@ -55,16 +55,16 @@
 	.header h1{ font-size:28px;}
 	.header{ padding:60px 0;}
 	.main-section{ padding:60px 0 70px;}
-	.main-nav{ display:none; position:absolute; left:0; width:100%;top: 68px; margin:0 auto; flote : none; background:#fff;}
+	.main-nav{ display:none; position:absolute; left:0; width:100%;top: 68px; margin:0 auto;float: none; background:#fff;z-index: 1;}
 	.main-nav li{ display:block;}
 	.main-nav li.small-logo{ display:none;}
 	.main-nav li a{ display:block; padding:7px 32px; border-bottom:none;}
-	.main-nav li a:hover{color:#7cc576}
+	.main-nav li a:hover{color: #26A69A;}
 	.team-leader-box{ max-width:307px; width:auto; float:none; margin:0 auto;	}
 	.team-leader-box:nth-of-type(3n){ margin:0 auto}
 	.res-nav_click{ display:block;}
-	.featured-work{ font-size:12px; margin-top:30px;}
-	.featured-box{ font-size:12px;}
+	.featured-work{ font-size:13px; margin-top:30px;}
+	.featured-box{ font-size:13px;}
 	.featured-box p{ line-height:18px; }
 	.c-logo-part ul a{ margin-bottom:5px;}
 	.main-section.team{ padding:60px 0 50px;}

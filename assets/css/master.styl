@@ -5,84 +5,100 @@
 base()
 
 body
-  padding: 0px
-  font: 14px/1.6 $open-sans
+	padding: 0px
+	font: 14px/1.6 $open-sans
 
 figure
-  margin:0px auto !important
+	margin:0px auto !important
 
 section#news h6
-  margin-bottom:30px
+	margin-bottom:30px
 
 ul#partner-list li
-  float:left
-  margin:5px
-  border:1px solid #eee
+	float:left
+	margin:5px
+	border:1px solid #eee
 
 #partners
-  background: url(../img/bg-partners.jpg) left top
-  background-size:contain
-  padding:90px 0 110px
+	background: url(../img/bg-partners.jpg) left top
+	background-size:contain
+	padding:90px 0 110px
 
 .feature-box .icon-wrapper,
 .feature-box .inner-wrapper
-  display:table-cell
-  vertical-align:top
+	display:table-cell
+	vertical-align:top
 
 .feature-box .icon-wrapper
-  width:25px
+	width:25px
 
 #contact
-  background-color:#222
-  padding:90px 0 80px
+	background-color:#222
+	padding:90px 0 0px
 
 #contact a
-  color:#fff
-  font-weight:300
+	color:#fff
+	font-weight:300
+
+#contact .container .row .col-sm-6
+	margin-bottom:20px;
 
 .input-field.form-group,
 .input-group-btn
-  display:table-cell
+	display: table-cell
 
 form.input-group
-  width: 100%
-  margin-top: 15px
+	width: 100%
+	margin-top: 15px
+
+form.input-group .input-field input
+	margin:0px
+
+form.input-group .input-group-btn button
+	height:100%
+
 
 .widget-title
-  color:#fff
-  margin-bottom:40px !important
+	color:#fff
+	margin-bottom:40px !important
 
 .main-continer .title-header
-  text-align:left
+	text-align:left
 
 ul.social-icons
-  margin-top:10px
+	margin-top:10px
 ul.social-icons li
-  text-align:center
-  width:40px
-  height:40px
-  line-height:2.8
-  overflow:hidden
-  float:left
-  margin-right:5px
+	text-align:center
+	width:40px
+	height:40px
+	line-height:2.8
+	overflow:hidden
+	float:left
+	margin-right:5px
 ul.social-icons li a
-  display:block
-  border: 1px solid #424242
-  border-radius:4px
-  -webkit-border-radius:4px
+	display:block
+	border: 1px solid #424242
+	border-radius:4px
+	-webkit-border-radius:4px
 
 .read-more
-  margin-top:15px
+	margin-top:15px
 
 
 .read-more .btn
-  margin-top:15px
-  padding:0px 1rem
+	margin-top:15px
+	padding:0px 1rem
 
 .card time
-  display:block
-  margin-top:10px
-  text-transform:uppercase
-  font-weight:600
+	display:block
+	margin-top:10px
+	text-transform:uppercase
+	font-weight:600
 .card .card-reveal time
-  margin-bottom:10px
+	margin-bottom:10px
+
+@media (max-width:767px)
+
+	#service .row figure
+		margin:40px auto 0px auto !important
+		clear:both
