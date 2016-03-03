@@ -42,8 +42,6 @@ $(function(){
 				isIsotope: true,
 				isotopeResize: 4
 
-
-
 		});
 
 
@@ -58,6 +56,16 @@ $(function(){
 			   }
 			});
 		});
+
+
+		var d = document, s = d.createElement('script');
+
+		s.src = '//businesstpl.disqus.com/embed.js';
+
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+
+
 });
 
 

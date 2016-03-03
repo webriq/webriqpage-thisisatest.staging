@@ -1,7 +1,9 @@
 extends sub-layout
 
 block content
-		form.col.s12(name="contact-form", action="thank-you-page", netlify)
+		h2.title-header Contact Us
+		p.padding-b For more information about our services you can contact us through our form below.
+		form(name="contact-form", action="thank-you-page", netlify)
 			.row
 				.input-field.col.s12.m6
 					input#first_name.validate(type='text', required)
