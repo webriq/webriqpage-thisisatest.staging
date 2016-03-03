@@ -4,28 +4,28 @@ block content
 		h2.title-header Contact Us
 		p.padding-b For more information about our services you can contact us through our form below.
 		form(name="contact-form", method="POST", action="thank-you-page", netlify)
-			input(type="hidden", name="_subject", value="Online Enquiries")
+			input(type="hidden", name="subject", value="Online Enquiries")
 			.row
 				.input-field.col.s12.m6
-					input#first_name.validate(type='text', name="first name:", required)
+					input#first_name.validate(type='text', name="first name", required)
 					label(for='first_name') First Name <sup class="materialize-red-text">*</sup>
 				.input-field.col.s12.m6
-					input#last_name.validate(type='text', name="last name:", required)
+					input#last_name.validate(type='text', name="last name", required)
 					label(for='last_name') Last Name <sup class="materialize-red-text">*</sup>
 			.row
 				.input-field.col.s12.m6
-					input#phone.validate(type='text', name="contact no:")
+					input#phone.validate(type='text', name="contact no")
 					label(for='phone') Contact No.
 				.input-field.col.s12.m6
-					input#email.validate(type='email', name="_replyto:", required)
+					input#email.validate(type='email', name="replyto", required)
 					label(for='email') Email <sup class="materialize-red-text">*</sup>
 			.row
 				.input-field.col.s12
-					input#address.validate(type='text', name="address:")
+					input#address.validate(type='text', name="address")
 					label(for='address') Address
 			.row
 				.input-field.col.s12
-					textarea#message.materialize-textarea(name="message:")
+					textarea#message.materialize-textarea(name="message")
 					label(for='message') Message
 			.row
 				.input-field.col.s12
