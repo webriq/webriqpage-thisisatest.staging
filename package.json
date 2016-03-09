@@ -1,5 +1,5 @@
 {
-  "name": "-business-template",
+  "name": "business-template",
   "description": "",
   "dependencies": {
     "autoprefixer-stylus": "0.8.x",
