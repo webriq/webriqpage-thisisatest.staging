@@ -22,15 +22,13 @@ module.exports =
       moment(date).format(format)
 
   extensions: [
-    dynamic_content(write: { 'index.md': 'services'}),
+    dynamic_content(),
     records(
       slider: { file: "data/slider.json" }
       slidertext: { file: "data/slidertext.json" }
       clients: { file: "data/clients.json" }
     ),
-    collections(folder: 'news', layout: 'post'),
-    collections(folder: 'posts', layout: 'post'),
-    collections(folder: 'services', layout: 'page'),
+    collections(folder: 'services', layout: 'post'),
     js_pipeline(files: 'assets/js/*.coffee'),
     css_pipeline(files: 'assets/css/*.styl')
   ]
