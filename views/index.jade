@@ -14,12 +14,9 @@ block content
 			a(class="waves-effect waves-light btn-large animated fadeInUp delay-1s", href="#service") Learn More
 
 			ul#cbp-bislideshow.cbp-bislideshow
-				li
-					img(src="../img/header4.jpg", alt="image01")
-				li
-					img(src="../img/header3.jpg", alt="image02")
-				li
-					img(src="../img/header2.jpg", alt="image03")
+				- each sliders in records.slider.slide
+					li
+						img(src= sliders.image, alt= sliders.name)
 
 
 			div#cbp-bicontrols.cbp-bicontrols
@@ -50,40 +47,42 @@ block content
 
 	section#service.main-section.scrollspy
 		.container
-				h2 Services
-				h6 We offer exceptional service with complimentary hugs.
-				.row
-					.col-lg-4.col-sm-6.wow.fadeInLeft.delay-05s
-						.service-list
-							.service-list-col1
-								i.fa-paw
-							.service-list-col2
-								h5 branding &amp; identity
-								p Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.
-						.service-list
-							.service-list-col1
-								i.fa-gear
-							.service-list-col2
-								h5 web development
-								p Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .
-						.service-list
-							.service-list-col1
-								i.fa-apple
-							.service-list-col2
-								h5 mobile design
-								p Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.
-						.service-list
-							.service-list-col1
-								i.fa-medkit
-							.service-list-col2
-								h5 24/7 Support
-								p Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.
-						.clear
-						p.text-right
-							a(href="/services", class="waves-effect waves-light grey darken-4 btn-large") Read More
+				each serv in site.serivces
+					h2= serv.title
+					h6= serv.shortdesc
 
-					figure.col-lg-8.col-sm-6.text-right.wow.fadeInUp.delay-02s
-						img(src='../img/macbook-pro.png', alt='')
+					.row
+						.col-lg-4.col-sm-6.wow.fadeInLeft.delay-05s
+							.service-list
+								.service-list-col1
+									i.fa-paw
+								.service-list-col2
+									h5 branding &amp; identity
+									p Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.
+							.service-list
+								.service-list-col1
+									i.fa-gear
+								.service-list-col2
+									h5 web development
+									p Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .
+							.service-list
+								.service-list-col1
+									i.fa-apple
+								.service-list-col2
+									h5 mobile design
+									p Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.
+							.service-list
+								.service-list-col1
+									i.fa-medkit
+								.service-list-col2
+									h5 24/7 Support
+									p Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.
+							.clear
+							p.text-right
+								a(href=serv._url, class="waves-effect waves-light grey darken-4 btn-large") Read More
+
+						figure.col-lg-8.col-sm-6.text-right.wow.fadeInUp.delay-02s
+							img(src= serv.banner, alt='')
 
 	section.main-section.alabaster.scrollspy
 		.container
@@ -235,4 +234,3 @@ block content
 							figure
 								a(href='#')
 									img(alt='', src='../img/partners/img-partner17.jpg')
-
