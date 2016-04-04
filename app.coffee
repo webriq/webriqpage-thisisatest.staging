@@ -28,7 +28,7 @@ module.exports =
       slidertext: { file: "data/slidertext.json" }
       clients: { file: "data/clients.json" }
     ),
-    collections(folder: 'services', layout: 'post'),
+    collections(folder: 'services', layout: 'page'),
     js_pipeline(files: 'assets/js/*.coffee'),
     css_pipeline(files: 'assets/css/*.styl')
   ]
