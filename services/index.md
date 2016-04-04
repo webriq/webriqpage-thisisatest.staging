@@ -3,7 +3,7 @@ title: Services
 banner: /img/uploads/macbook-pro.png
 shortdesc: "Finn and Jake follow the Lich to the Citadel, where Finn meets his long lost dad."
 cmsUserSlug: services
-date: now
+date: 2016-04-03 
 ---
 
 <h2 class="title-header">Our Services</h2>
