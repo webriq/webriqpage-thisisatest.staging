@@ -1,6 +1,6 @@
 ---
 title: Services
-banner: /img/citadel.jpg
+banner: /img/uploads/macbook-pro.png
 shortdesc: "Finn and Jake follow the Lich to the Citadel, where Finn meets his long lost dad."
 cmsUserSlug: services
 date: now
