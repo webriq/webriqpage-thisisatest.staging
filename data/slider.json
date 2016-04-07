@@ -1,1 +1,16 @@
-{"slide":[{"image":"/img/header4.jpg","name":"image-1"},{"image":"/img/header3.jpg","name":"image-2"},{"image":"/img/header2.jpg","name":"image-3"}]}
+{
+  "slide": [
+    {
+      "image": "/img/header4.jpg",
+      "name": "image-1"
+    },
+    {
+      "image": "/img/header3.jpg",
+      "name": "image-2"
+    },
+    {
+      "image": "/img/header2.jpg",
+      "name": "image-3"
+    }
+  ]
+}

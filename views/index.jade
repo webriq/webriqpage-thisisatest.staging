@@ -1,120 +1,39 @@
 extends layout
 
-block content
-	div
-	header.header#header.scrollspy
-		div.container
-			figure.logo.animated.fadeInDown.delay-07s
-					a(href="#")
-						img(src="img/logo2.png", alt="")
-			h1.animated.fadeInDown.delay-07s Welcome To Meg Studios
-			ul.we-create.animated.fadeInUp.delay-1s
-				li We are a digital agency that loves crafting beautiful websites.
+block append content
 
-			a(class="waves-effect waves-light btn-large animated fadeInUp delay-1s", href="#service") Learn More
-
-			ul#cbp-bislideshow.cbp-bislideshow
-				- each sliders in records.slider.slide
-					li
-						img(src= sliders.image, alt= sliders.name)
-
-
-			div#cbp-bicontrols.cbp-bicontrols
-				span.cbp-biprev
-				span.cbp-bipause
-				span.cbp-binext
-
-	nav#test.main-nav-outer
-		.container
-			ul.main-nav
-				li
-					a(href='#header') Home
-				li
-					a(href='#service') Services
-				li
-					a(href='#client_outer') Clients
-				li.small-logo
-					a(href='#header')
-						img(src='../img/small-logo2.png', alt='')
-				li
-					a(href='#news') News
-				li
-					a(href='#partners') Partners
-				li
-					a(href='/contact-us') Contact
-			a.res-nav_click(href='#')
-				i.fa-bars
 
 	section#service.main-section.scrollspy
 		.container
-				each service in site.services
-					h2= service.title
-					h6= service.shortdesc
+			each service in services.sort('title')
+				h2= service.title
+				h6= service.shortdesc
 
-					.row
-						.col-lg-4.col-sm-6.wow.fadeInLeft.delay-05s
+				.row
+					.col-lg-4.col-sm-6.wow.fadeInLeft.delay-05s
+						!= service.html
+						.clear
+						p.text-right
+							a(href=service.permalink, class="waves-effect waves-light grey darken-4 btn-large") Read More
 
-							//- .service-list
-							//- 	.service-list-col1
-							//- 		i.fa-paw
-							//- 	.service-list-col2
-							//- 		h5 branding &amp; identity
-							//- 		p Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.
-							//- .service-list
-							//- 	.service-list-col1
-							//- 		i.fa-gear
-							//- 	.service-list-col2
-							//- 		h5 web development
-							//- 		p Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .
-							//- .service-list
-							//- 	.service-list-col1
-							//- 		i.fa-apple
-							//- 	.service-list-col2
-							//- 		h5 mobile design
-							//- 		p Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.
-							//- .service-list
-							//- 	.service-list-col1
-							//- 		i.fa-medkit
-							//- 	.service-list-col2
-							//- 		h5 24/7 Support
-							//- 		p Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.
-							.clear
-							p.text-right
-								a(href=service._url, class="waves-effect waves-light grey darken-4 btn-large") Read More
-
-						figure.col-lg-8.col-sm-6.text-right.wow.fadeInUp.delay-02s
-							img(src= service.banner, alt='')
+					figure.col-lg-8.col-sm-6.text-right.wow.fadeInUp.delay-02s
+						img(src= service.banner, alt='')
 
 	section.main-section.alabaster.scrollspy
 		.container
-			.row
-				figure.col-lg-5.col-sm-4.wow.fadeInLeft
-					img(src='../img/iphone.png', alt='')
-				.col-lg-7.col-sm-8.featured-work
-					h2 featured work
-					p(class="padding-b")  Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.
-					.featured-box
-						.featured-box-col1.wow.fadeInRight.delay-02s
-							i.fa-magic
-						.featured-box-col2.wow.fadeInRight.delay-02s
-							h5 magic of theme development
-							p Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-					.featured-box
-						.featured-box-col1.wow.fadeInRight.delay-04s
-							i.fa-gift
-						.featured-box-col2.wow.fadeInRight.delay-04s
-							h5 neatly packaged
-							p Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-					.featured-box
-						.featured-box-col1.wow.fadeInRight.delay-06s
-							i.fa-dashboard
-						.featured-box-col2.wow.fadeInRight.delay-06s
-							h5 SEO optimized
-							p Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-					.clear
-					p.text-right.wow.fadeInRight.delay-07s
-						a(href="/works", class="waves-effect waves-light grey darken-4 btn-large") Read More
+			each work in featuredwork.sort('title')
+				.row
+					figure.col-lg-5.col-sm-4.wow.fadeInLeft
+						img(src= work.banner, alt='')
+					.col-lg-7.col-sm-8.featured-work
+						h2= work.title
+						p(class="padding-b")= work.shortdesc
 
+						!= work.html
+
+						.clear
+						p.text-right.wow.fadeInRight.delay-07s
+							a(href= work.permalink, class="waves-effect waves-light grey darken-4 btn-large") Read More
 
 	section#client_outer.main-section.scrollspy
 			h2 Happy Clients
@@ -122,31 +41,31 @@ block content
 				.client_section.animated.fadeInUp.wow
 					.client_profile
 						.client_profile_pic
-							img(src='../img/client-pic1.jpg', alt='')
-						h3 Saul Goodman
-						span Lawless Inc
+							img(src= records.client.data[0].image, alt='')
+						h3= records.client.data[0].name
+						span= records.client.data[0].work
 
 					.quote_section
 						.quote_arrow
 						p
 							b
 								img(src='../img/quote_sign_left.png', alt='')
-							p Persteadfadf iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+							p= records.client.data[0].comment
 							small
 								img(src='../img/quote_sign_right.png', alt='')
 					.clear
 				.client_section.animated.fadeInDown.wow
 					.client_profile.flt
 						.client_profile_pic
-							img(src='../img/client-pic2.jpg', alt='')
-						h3 Marie Schrader
-						span DEA Foundation
+							img(src= records.client.data[1].image, alt='')
+						h3= records.client.data[1].name
+						span= records.client.data[1].work
 					.quote_section.flt
 						.quote_arrow2
 						p
 							b
 								img(src='../img/quote_sign_left.png', alt='')
-							p Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+							p= records.client.data[1].comment
 							small
 								img(src='../img/quote_sign_right.png', alt='')
 					.clear
@@ -156,8 +75,25 @@ block content
 			h6 Proin iaculis purus consequat sem cure digni ssim.
 			.row
 				div.lazy-wrapper.wow.fadeInUp.delay-0s
+					each newss in news.orderBy('date', 'asc').slice(0, 4)
+						.col-sm-4.lazyItem
+							.card
+								.card-image.waves-effect.waves-block.waves-light
+									img.activator(src= newss.banner)
+								.card-content
+									i.material-icons.right more_vert
+									span.card-title.activator.grey-text.text-darken-4= newss.title
+									time(date= newss.date)= newss.date
+								.card-reveal
+									span.card-title.grey-text.text-darken-4= newss.title
+										i.material-icons.right close
+									time(date= newss.date)= newss.date
+									p= newss.shortdesc
+									p.read-more
+										a.btn.waves-effect.waves-light(href= newss.permalink) READ MORE
+				p.read-more.center
+					a.btn.waves-effect.waves-light.btn-large(href="/news-list.html") VIEW ALL NEWS
 				.clear
-
 	section#partners.scrollspy
 		.container.wow.fadeIn.delay-0s
 			h2  Our Partners
@@ -165,73 +101,48 @@ block content
 			.row
 				.col-lg-12
 					ul#partner-list
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner3.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner4.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner5.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner6.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner7.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner8.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner9.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner10.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner11.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner12.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner13.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner15.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner16.jpg')
-						li.wow.zoomIn
-							a(href='#', style='display:none;') BAT Boll
-							figure
-								a(href='#')
-									img(alt='', src='../img/partners/img-partner17.jpg')
+						- each partner in records.partners.data
+								li.wow.zoomIn
+									figure
+										a(href= partner.website)
+											img(alt='', src= partner.logo)
+
+
+	//- .row
+	//-   .12u
+	//-     section
+	//-       header.major
+	//-         h2 Recent Episodes
+	//-       div.row
+	//-         each post in posts.sort('date', 'asc')
+	//-           .6u
+	//-             section.box
+	//-               a.image.featured(href=post.permalink)
+	//-                 img(src= post.banner)
+	//-               header
+	//-                 h3= post.title
+	//-                 p= "Posted " + dateFormat(post.date, 'LL')
+	//-                 != postExcerpt(post.body, 250)
+	//-               footer
+	//-                 ul.actions
+	//-                   li
+	//-                     a.button.icon.fa-file-text(href= post.permalink) Continue Reading
+
+
+	//- .row
+	//-   .12u
+	//-     section
+	//-       header.major
+	//-         h2 Characters
+
+	//-       .row
+	//-         - each character in records.characters.data
+	//-           .4u
+	//-             .box
+	//-               span.image.featured
+	//-                 img(src=character.image)
+	//-               header
+	//-                 h3= character.name
+	//-                 p= character.description
+
+

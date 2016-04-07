@@ -1,8 +1,11 @@
 extends layout
 
 block content
-	article.box.post
-		header
-			h2= entry.title
-			p= entry.shortdesc
-		!= entry.body
+	.main-continer
+		.container
+			.row.wow.fadeInUp
+				.col-md-8.row#main-content
+					h2.title-header= entry.title
+					!= entry.body
+				.col-md-4#right-sidebar
+					include ./includes/_sidebar
