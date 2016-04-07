@@ -5,8 +5,8 @@ backend:
 production:
   backend:
     name: github-api
-    repo: ayenzky/business-cms-sample # Path to your Github repository
-    branch: master # Branch to update (master by default)
+    repo: ayenzky/Business_Template # Path to your Github repository
+    branch: develop # Branch to update (master by default)
 
 media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 public_folder: "assets"
