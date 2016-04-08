@@ -2,11 +2,11 @@
   "sitedata": [
     {
       "logo": "/img/small-logo2.png",
+      "icon": "/img/favico.png",
       "sitename": "businessnetlfiycms",
       "metadesc": "business netlfiy cms",
       "metakeyword": "business, netlify, cms",
       "metauthor": "webriq",
-      "icon": "/img/favico.png",
       "sliderlogo": "/img/logo2.png",
       "slidertxt": "Welcome To Meg Studios",
       "sliderdesc": "WE ARE A DIGITAL AGENCY THAT LOVES CRAFTING BEAUTIFUL WEBSITES.",

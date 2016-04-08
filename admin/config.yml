@@ -25,11 +25,11 @@ collections: # A list of collections the CMS should be able to edit
             widget: "list"
             fields:
               - {label: "Site Logo", name: "logo", widget: "image", media_folder: "assets/img"}
+              - {label: "Favicon", name: "icon", widget: "image", media_folder: "assets/img"}
               - {label: "Site name", name: "sitename", widget: "string"}
               - {label: "Website Description", name: "metadesc", widget: "string"}
               - {label: "Keywords", name: "metakeyword", widget: "string"}
               - {label: "Author", name: "metauthor", widget: "string"}
-              - {label: "Favicon", name: "icon", widget: "image", media_folder: "assets/img"}
               - {label: "Slider Logo", name: "sliderlogo", widget: "image", media_folder: "assets/img"}
               - {label: "Slider Text", name: "slidertxt", widget: "string"}
               - {label: "Slider Description", name: "sliderdesc", widget: "string"}
