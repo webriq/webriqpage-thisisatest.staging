@@ -13,14 +13,14 @@ public_folder: "assets"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "sitedata"
-    label: "Site Setting"
+    label: "Site Information"
     files:
       - name: "sitedata"
-        label: "Site"
+        label: "Site Information"
         file: "data/site.json"
-        description: "site setting"
+        description: "edit site setting"
         fields:
-          - label: "Site"
+          - label: "Site Information"
             name: "sitedata"
             widget: "list"
             fields:
