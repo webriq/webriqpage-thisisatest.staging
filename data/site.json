@@ -1,16 +1,1 @@
-{
-  "sitedata": [
-    {
-      "logo": "/img/small-logo2.png",
-      "sitename": "businessnetlfiycms",
-      "metadesc": "business netlfiy cms",
-      "metakeyword": "business, netlify, cms",
-      "metauthor": "webriq",
-      "icon": "/img/favico.png",
-      "sliderlogo": "/img/logo2.png",
-      "slidertxt": "Welcome To Meg Studios",
-      "sliderdesc": "WE ARE A DIGITAL AGENCY THAT LOVES CRAFTING BEAUTIFUL WEBSITES.",
-      "footer": "  Copyright © 2014 Meg Studios - by WebriQ Themes"
-    }
-  ]
-}
+{"sitedata":[{"logo":"/img/small-logo2.png","sitename":"Business Template","metadesc":"business netlfiy cms","metakeyword":"business, netlify, cms","metauthor":"webriq","icon":"/img/favico.png","sliderlogo":"/img/logo2.png","slidertxt":"Welcome To Meg Studios","sliderdesc":"WE ARE A DIGITAL AGENCY THAT LOVES CRAFTING BEAUTIFUL WEBSITES.","footer":"  Copyright © 2014 Meg Studios - by WebriQ Themes"}]}
