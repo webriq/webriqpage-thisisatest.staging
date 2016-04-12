@@ -24,15 +24,12 @@ collections: # A list of collections the CMS should be able to edit
             name: "sitedata"
             widget: "list"
             fields:
-              - {label: "Site Logo", name: "logo", widget: "image", media_folder: "assets/img"}
               - {label: "Favicon", name: "icon", widget: "image", media_folder: "assets/img"}
+              - {label: "Site Logo", name: "logo", widget: "image", media_folder: "assets/img"}
               - {label: "Site name", name: "sitename", widget: "string"}
               - {label: "Website Description", name: "metadesc", widget: "string"}
-              - {label: "Keywords", name: "metakeyword", widget: "string"}
               - {label: "Author", name: "metauthor", widget: "string"}
-              - {label: "Slider Logo", name: "sliderlogo", widget: "image", media_folder: "assets/img"}
-              - {label: "Slider Text", name: "slidertxt", widget: "string"}
-              - {label: "Slider Description", name: "sliderdesc", widget: "string"}
+              - {label: "Keywords", name: "metakeyword", widget: "string"}
               - {label: "Footer", name: "footer", widget: "markdown"}
   - name: "slide"
     label: "Image Slider"
@@ -42,7 +39,14 @@ collections: # A list of collections the CMS should be able to edit
         file: "data/slider.json"
         description: "image slider"
         fields:
-          - label: "Image Slide"
+          - label: "Default Slider Text"
+            name: "slidetxt"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "sliderlogo", widget: "image", media_folder: "assets/img"}
+              - {label: "Slider Text", name: "slidertxt", widget: "string"}
+              - {label: "Slider Description", name: "sliderdesc", widget: "string"}
+          - label: "Image Slider"
             name: "slide"
             widget: "list"
             fields:
@@ -115,19 +119,19 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Logo", name: "logo", widget: "image", media_folder: "assets/img/partners"}
               - {label: "Website", name: "website", widget: "string"}
-  - name: "footeritems"
-    label: "Contact Section"
-    files:
-      - name: "footeritems"
-        label: "Contat Section"
-        file: "data/footer.json"
-        description: "contact info"
-        fields:
-          - label: "Footer"
-            name: "footeritems"
-            widget: "list"
-            fields:
-              - {label: "News", name: "html", widget: "markdown"}
+  # - name: "footeritems"
+  #   label: "Contact Section"
+  #   files:
+  #     - name: "footeritems"
+  #       label: "Contat Section"
+  #       file: "data/footer.json"
+  #       description: "contact info"
+  #       fields:
+  #         - label: "Footer"
+  #           name: "footeritems"
+  #           widget: "list"
+  #           fields:
+  #             - {label: "News", name: "html", widget: "markdown"}
   - name: "items"
     label: "Sidebar"
     files:

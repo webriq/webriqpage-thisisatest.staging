@@ -22,12 +22,39 @@ html
       }
       body.ember-application .cms-list-entry,
       body.ember-application .cms-preview-pane {
-        background: #fff;
+        background: #f7f7f7;
       }
     script!= "CMS_ENV = \"" + (process.env.CMS_ENV || "development") + "\";"
 
     base(href="/admin/")
   body
+
+    script(type="text/x-handlebars" data-template-name='cms/preview/sitedata').
+      <div id="main-wrapper">
+        <div class="container">
+
+          {{#cms-preview field="sitedata" as |sitedatas| }}
+            <section class="box">
+              <h1>Site Information</h1>
+              <hr>
+              <h5>Website Name:</h5>
+              <p>{{sitedatas.sitename}}</p>
+              <h5>Favicon icon:</h5>
+              <p>{{cms-preview field="icon" from=sitedatas}}</p>
+              <h5>Site Logo:</h5>
+              <p>{{cms-preview field="logo" from=sitedatas}}</p>
+              <h5>Meta Description:</h5>
+              <p>{{sitedatas.metadesc}}</p>
+              <h5>Meta Author:</h5>
+              <p>{{sitedatas.metauthor}}</p>
+              <h5>Meta Keywords:</h5>
+              <p>{{sitedatas.metauthor}}</p>
+              <h5>Copyright Text:</h5>
+              <p>{{cms-preview field="footer" from=sitedatas}}</p>
+            </section>
+          {{/cms-preview}}
+        </div>
+      </div>
 
 
     script(src="//cms.netlify.com/assets/vendor.js")
