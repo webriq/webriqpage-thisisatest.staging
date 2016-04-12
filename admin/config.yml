@@ -24,25 +24,29 @@ collections: # A list of collections the CMS should be able to edit
             name: "sitedata"
             widget: "list"
             fields:
-              - {label: "Site Logo", name: "logo", widget: "image", media_folder: "assets/img"}
               - {label: "Favicon", name: "icon", widget: "image", media_folder: "assets/img"}
+              - {label: "Site Logo", name: "logo", widget: "image", media_folder: "assets/img"}
               - {label: "Site name", name: "sitename", widget: "string"}
               - {label: "Website Description", name: "metadesc", widget: "string"}
               - {label: "Author", name: "metauthor", widget: "string"}
               - {label: "Keywords", name: "metakeyword", widget: "string"}
-              - {label: "Slider Logo", name: "sliderlogo", widget: "image", media_folder: "assets/img"}
-              - {label: "Slider Text", name: "slidertxt", widget: "string"}
-              - {label: "Slider Description", name: "sliderdesc", widget: "string"}
               - {label: "Footer", name: "footer", widget: "markdown"}
-  # - name: "slide"
-  - label: "Image Slider"
+  - name: "slide"
+    label: "Image Slider"
     files:
       - name: "slider"
-      - label: "Image Slide"
+        label: "Image Slide"
         file: "data/slider.json"
         description: "image slider"
         fields:
-          - label: "Image Slide"
+          - label: "Default Slider Text"
+            name: "slidetxt"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "sliderlogo", widget: "image", media_folder: "assets/img"}
+              - {label: "Slider Text", name: "slidertxt", widget: "string"}
+              - {label: "Slider Description", name: "sliderdesc", widget: "string"}
+          - label: "Image Slider"
             name: "slide"
             widget: "list"
             fields:
