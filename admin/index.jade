@@ -29,6 +29,34 @@ html
     base(href="/admin/")
   body
 
+    script(type="text/x-handlebars" data-template-name='cms/preview/sitedata').
+      <div id="main-wrapper">
+        <div class="container">
+          {{#cms-preview field="sitedata" as |sitedatas| }}
+            <section class="box">
+              <h5>Site Logo:</h5>
+              <p>{{cms-preview field="logo" from=sitedatas}}</p>
+              <h5>Favicon icon:</h5>
+              <p>{{cms-preview field="icon" from=sitedatas}}</p>
+              <h5>Website Description:</h5>
+              <p>{{sitedatas.metadesc}}</p>
+              <h5>Website Author:</h5>
+              <p>{{sitedatas.metauthor}}</p>
+              <h5>Website Keywords:</h5>
+              <p>{{sitedatas.metauthor}}</p>
+              <h5>Slider Logo:</h5>
+              <p style="background-color:#f8f8f8;">{{cms-preview field="sliderlogo" from=sitedatas}}</p>
+              <h5>Slider Text:</h5>
+              <p>{{cms-preview field="slidertxt" from=sitedatas}}</p>
+              <h5>Slider Description:</h5>
+              <p>{{cms-preview field="sliderdesc" from=sitedatas}}</p>
+              <h5>Footer:</h5>
+              <p>{{cms-preview field="footer" from=sitedatas}}</p>
+            </section>
+          {{/cms-preview}}
+        </div>
+      </div>
+
 
     script(src="//cms.netlify.com/assets/vendor.js")
     script(src="//cms.netlify.com/assets/cms.js")
