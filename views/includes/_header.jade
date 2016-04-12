@@ -2,13 +2,13 @@
 if _path == "/index.html"
 	header.header#header.scrollspy
 		div.container
-			- each sites in records.site.sitedata
+			- each slidertxt in records.slider.slidetxt
 				figure.logo.animated.fadeInDown.delay-07s
 						a(href="#")
-							img(src= sites.sliderlogo, alt="")
-				h1.animated.fadeInDown.delay-07s= sites.slidertxt
+							img(src= slidertxt.sliderlogo, alt="")
+				h1.animated.fadeInDown.delay-07s= slidertxt.slidertxt
 				ul.we-create.animated.fadeInUp.delay-1s
-					li= sites.sliderdesc
+					li= slidertxt.sliderdesc
 
 				a(class="waves-effect waves-light btn-large animated fadeInUp delay-1s", href="#service") Learn More
 
