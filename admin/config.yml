@@ -61,6 +61,12 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Banner", name: "banner", widget: "image", class: "image featured"}
       - {label: "Short Description", name: "shortdesc", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - name: "listservices"
+        label: "List Services"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "title", widget: "string"}
+          - {label: "Tagline", name: "tagline", widget: "string"}
   - name: "work" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Featured Work"  # Used in the UI, ie.: "New Post"
     folder: "featuredwork" # The path to the folder where the documents are stored
