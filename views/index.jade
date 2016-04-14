@@ -11,13 +11,12 @@ block append content
 
 				.row
 					.col-lg-4.col-sm-6.wow.fadeInLeft.delay-05s
-						each listservice in services.sort('date')
-							.service-list
-								.service-list-col1
-									i(class= listservice.icon)
-								.service-list-col2
-									h5= listservice.subtitle
-									p= listservice.tagline
+						.service-list
+							.service-list-col1
+								i(class= entry.icon)
+							.service-list-col2
+								h5= entry.subtitle
+								p= entry.tagline
 						//- .service-list
 						//- 	.service-list-col1
 						//- 		i.fa-gear
