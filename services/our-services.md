@@ -3,10 +3,9 @@ title: Our Services
 banner: /img/macbook-pro.png
 shortdesc: "Finn and Jake follow the Lich to the Citadel, where Finn meets his long lost dad."
 listservices:
-  - title: asdfasdf
+  - icon: fa-paw
+    title: asdfasdf
     tagline: asdfaaaaaaaaaaaaaaaaaaaa
-  - title: adsfasdfasdfffffffffffff
-    tagline: asdfasdfasdfasdfasdfasdfasdfadf
 cmsUserSlug: our-services
 date: now
 ---
