@@ -7,6 +7,7 @@ listservices:
     subtitle: asdfasdf
     tagline: asdfaaaaaaaaaaaaaaaaaaaa
 cmsUserSlug: our-services
+date: now
 ---
 
 #### Branding & Identity
