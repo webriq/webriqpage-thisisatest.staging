@@ -7,6 +7,8 @@ listservices:
     tagline: asdfaaaaaaaaaaaaaaaaaaaa
   - title: adsfasdfasdfffffffffffff
     tagline: asdfasdfasdfasdfasdfasdfasdfadf
+  - title: New name
+    tagline: this is a new namem
 cmsUserSlug: our-services
 date: now
 ---
