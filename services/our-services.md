@@ -4,7 +4,10 @@ banner: /img/macbook-pro.png
 shortdesc: "Finn and Jake follow the Lich to the Citadel, where Finn meets his long lost dad."
 listservices:
   - icon: fa-paw
-    name: test
+    subtitle: asdfasdf
+    tagline: asdfaaaaaaaaaaaaaaaaaaaa
+icon: TEST
+name: TEADFASDF
 cmsUserSlug: our-services
 date: now
 ---
