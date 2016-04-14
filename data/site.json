@@ -1,14 +1,1 @@
-{
-  "sitedata": [
-    {
-      "logo": "/img/small-logo2.png",
-      "icon": "/img/favico.png",
-      "sitename": "businessnetlfiycms",
-      "metadesc": "business netlfiy cms",
-      "metakeyword": "business, netlify, cms",
-      "metauthor": "webriq",
-      "footer": "  Copyright © 2014 Meg Studios - by WebriQ Themes"
-    }
-  ]
-}
-
+{"sitedata":[{"icon":"/img/favico.png","logo":"/img/small-logo2.png","sitename":"businessnetlfiycms","metadesc":"business netlfiy cms","metauthor":"webriq","metakeyword":"business, netlify, cms","footer":"  Copyright © 2014 Meg Studios - by WebriQ Themes"}]}
