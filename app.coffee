@@ -36,7 +36,6 @@ module.exports =
     collections(folder: 'featuredwork', layout: 'post'),
     collections(folder: 'posts', layout: 'post'),
     collections(folder: 'news', layout: 'post'),
-    collections(folder: 'contact', layout: 'contact-us'),
     js_pipeline(files: 'assets/js/*.coffee'),
     css_pipeline(files: 'assets/css/*.styl')
   ]
