@@ -1,17 +1,31 @@
-# Business Template
+# Roots + WebriQ CMS
 
+This is a simple example of how to integrate Webriq CMS with a roots based site.
 
+## Setting up
 
-### Setup
+Make sure to install the [netlify-git-api](https://github.com/webriq/netlify-git-api) before you start.
 
-- make sure [node.js](http://nodejs.org) and [roots](http://roots.cx) are installed
-- clone this repo down and `cd` into the folder
-- run `npm install`
-- run `roots watch`
-- ???
-- get money
+Then:
 
-### Deploying
+```bash
+git clone https://github.com/webriq/business-static-template
+cd business-static-template
+netlify-git-api users add
+netlify-git-api serve
+```
 
-- If you just want to compile the production build, run `roots compile -e production` and it will build to public.
-- To deploy your site with a single command, run `roots deploy -to XXX` with `XXX` being whichever [ship](https://github.com/carrot/ship#usage) deployer you want to use.
+Open a separate terminal window and run:
+
+```bash
+npm install
+roots watch
+```
+
+## Using
+
+Visit [localhost:1111](http://localhost:1111/) to browser the site.
+
+Visit [localhost:1111/admin](http://localhost:1111/admin) to use the CMS.
+
+To run against the GitHub API in production, edit the production backend settings for `admin/config.yml` with the correct repository and branch.
