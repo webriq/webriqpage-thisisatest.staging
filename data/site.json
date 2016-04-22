@@ -1,14 +1,13 @@
 {
   "sitedata": [
     {
-      "logo": "/img/small-logo2.png",
       "icon": "/img/favico.png",
-      "sitename": "businessnetlfiycms",
-      "metadesc": "business netlfiy cms",
-      "metakeyword": "business, netlify, cms",
+      "logo": "/img/small-logo2.png",
+      "sitename": "businessnetemplate",
+      "metadesc": "businesstemplate",
       "metauthor": "webriq",
+      "metakeyword": "business,  cms",
       "footer": "  Copyright © 2014 Meg Studios - by WebriQ Themes"
     }
   ]
 }
-

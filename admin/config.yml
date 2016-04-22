@@ -60,8 +60,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Banner", name: "banner", widget: "image", class: "image featured"}
       - {label: "Short Description", name: "shortdesc", widget: "string"}
-      - {label: "List Services", name: "html", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
+      # - name: "listservices"
+      #   label: "List Services"
+      #   widget: "list"
+      #   fields:
+      #     - {label: "Icon", name: "icon", widget: "string"}
+      #     - {label: "Name", name: "subtitle", widget: "string"}
+      #     - {label: "Tagline", name: "tagline", widget: "string"}
   - name: "work" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Featured Work"  # Used in the UI, ie.: "New Post"
     folder: "featuredwork" # The path to the folder where the documents are stored
@@ -70,7 +76,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Banner", name: "banner", widget: "image", class: "image featured", media_folder: "assets/img"}
       - {label: "Short Description", name: "shortdesc", widget: "string"}
-      - {label: "List Services", name: "html", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "News"  # Used in the UI, ie.: "New Post"
@@ -84,16 +89,16 @@ collections: # A list of collections the CMS should be able to edit
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Categories", name: "categories", widget: "string"}
-  - name: "contactus" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Contact Form"  # Used in the UI, ie.: "New Post"
-    folder: "contact" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Short Description", name: "shortdesc", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "data"
-    label: "Others"
+  # - name: "contactus" # Used in routes, ie.: /admin/collections/:slug/edit
+  #   label: "Contact Form"  # Used in the UI, ie.: "New Post"
+  #   folder: "contact" # The path to the folder where the documents are stored
+  #   create: false # Allow users to create new documents in this collection
+  #   fields: # The fields each document in this collection have
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Short Description", name: "shortdesc", widget: "string"}
+  #     - {label: "Body", name: "body", widget: "markdown"}
+  - name: "testi"
+    label: "Testimonial"
     files:
       - name: "client"
         label: "Testimonial"
@@ -101,13 +106,16 @@ collections: # A list of collections the CMS should be able to edit
         description: "client testimonial"
         fields:
           - label: "Testimonial"
-            name: "data"
+            name: "testi"
             widget: "list"
             fields:
               - {label: "Avatar", name: "image", widget: "image", media_folder: "assets/img"}
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Work", name: "work", widget: "string"}
               - {label: "Comment", name: "comment", widget: "string"}
+  - name: "data"
+    label: "Partners Logo"
+    files:
       - name: "partners"
         label: "Our Partners"
         file: "data/partners.json"
@@ -132,17 +140,17 @@ collections: # A list of collections the CMS should be able to edit
   #           widget: "list"
   #           fields:
   #             - {label: "News", name: "html", widget: "markdown"}
-  - name: "items"
-    label: "Sidebar"
-    files:
-      - name: "sidebar"
-        label: "Sidebar"
-        file: "data/sidebar.json"
-        description: "side bar"
-        fields:
-          - label: "Sidebar"
-            name: "items"
-            widget: "list"
-            fields:
-              - {label: "News", name: "title", widget: "string"}
-              - {label: "News", name: "html", widget: "markdown"}
+  # - name: "items"
+  #   label: "Sidebar"
+  #   files:
+  #     - name: "sidebar"
+  #       label: "Sidebar"
+  #       file: "data/sidebar.json"
+  #       description: "side bar"
+  #       fields:
+  #         - label: "Sidebar"
+  #           name: "items"
+  #           widget: "list"
+  #           fields:
+  #             - {label: "News", name: "title", widget: "string"}
+  #             - {label: "News", name: "html", widget: "markdown"}
