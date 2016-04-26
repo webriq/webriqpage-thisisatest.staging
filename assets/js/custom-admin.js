@@ -9,10 +9,15 @@ var logo = '/img/logo@xs.png';
 // Work properly. All your hacks put
 // Them inside this container instead.
 
+
+
 $( document ).ajaxComplete(function() {
 
 	setTimeout(function(){
 		$('.cms-logo').find('a').html('<img src=' + logo + '>');
-	}, 100);   
+
+
+
+  }, 100);
 
 });
