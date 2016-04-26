@@ -25,7 +25,7 @@ section#contact
 
               p.feature-description Email:
                 a.text-light.text-color-hover(href='mailto:info@website.com')
-                  | support@megstudios.com
+                  |  support@megstudios.com
 
       .col-md-3.col-sm-6.col-md-offset-1.wow.fadeInLeft.delay-02s
         h5.widget-title Quick Links
@@ -35,25 +35,21 @@ section#contact
           li
             a(href="/about-us") About Us
           li
-            a(href="/services") Services
+            a(href="/services/our-services") Services
           li
-            a(href="/works") Works
+            a(href="/featuredwork/featured-work") Works
           li
-            a(href="#") News
+            a(href="/news-list") News
           li
             a(href="/contact-us") Contact
-          li
-            a(href="#") Terms & Conditions
-          li
-            a(href="#") Privacy
       .col-md-4.col-sm-6.wow.fadeInLeft.delay-02s
         h5.widget-title EMAIL NEWSLETTER
         p Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:
         form.input-group
           .row
             .input-field.form-group
-              input#email.validate(type='email')
-              label(for='email', data-error='wrong', data-success='right') Email
+              input#email.validate(type='email', placeholder='Email')
+
             span.input-group-btn
               button(class="btn btn-default", type="submit")
                 i(class="material-icons") forward
