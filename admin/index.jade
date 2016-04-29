@@ -7,31 +7,21 @@ html
 
     link(rel="icon", href= records.site.sitedata[0].icon, type="image/png")
     link(rel="shortcut icon", href= records.site.sitedata[0].icon, type="img/x-icon")
-    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
-    link(rel="stylesheet", href="//cms.netlify.com/assets/cms.css")
-    link(rel="stylesheet", href="/css/skel.css")
+
+    link(rel="stylesheet", href="//cms.webriq.com/assets/cms.css")
+
     link(rel="stylesheet", href="/css/style.css")
-    link(rel="stylesheet", href="/css/style-desktop.css")
-    link(rel="stylesheet", href="/css/webriq-template.css")
 
 
-    style.
-      .container {
-        width: auto;
-        max-width: 1200px;
-      }
-      body.ember-application .cms-list-entry,
-      body.ember-application .cms-preview-pane {
-        background: #f7f7f7;
-      }
     script!= "CMS_ENV = \"" + (process.env.CMS_ENV || "development") + "\";"
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
 
     base(href="/admin/")
   body
 
     script(type="text/x-handlebars" data-template-name='cms/preview/sitedata').
       <div id="main-wrapper">
-        <div class="container">
+        <div class="main-container">
 
           {{#cms-preview field="sitedata" as |sitedatas| }}
             <section class="box">
@@ -57,6 +47,5 @@ html
       </div>
 
 
-    script(src="//cms.netlify.com/assets/vendor.js")
-    script(src="//cms.netlify.com/assets/cms.js")
-    script(src="/js/custom-admin.js")
+    script(src="//cms.webriq.com/assets/vendor.js")
+    script(src="//cms.webriq.com/assets/cms.js")
