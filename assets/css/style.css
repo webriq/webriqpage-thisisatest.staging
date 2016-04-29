@@ -37,7 +37,7 @@
 
 	/**Menu Icons End Here**/
 
-	.main-container {
+	#main-wrapper .container {
     width: auto;
     max-width: 1200px;
     padding:20px;
