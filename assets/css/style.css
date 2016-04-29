@@ -37,6 +37,13 @@
 
 	/**Menu Icons End Here**/
 
+	body.nav-sm.nav-md .container.body .left_col{
+		width: 70px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+	}
+
 	#main-wrapper .container {
     width: auto;
     max-width: 1200px;
