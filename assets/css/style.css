@@ -314,8 +314,9 @@
 
 		.box
 		{
-			/* background: #ffffff; */
-			border-bottom: solid 1px #ccc;
+
+			width:100%;
+
 		}
 
 			.box .image.featured
