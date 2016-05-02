@@ -11,7 +11,7 @@ block content
   .main-continer
     .container
       .row.wow.fadeInUp
-        .col-md-8.row#main-content
+        .col-md-12.row#main-content
           h2.title-header List of News
           each newss in news.sort('date', 'asc')
             div.content-list
@@ -20,5 +20,5 @@ block content
                 p= newss.shortdesc
                 p.right-align.read-more
                   a.btn.waves-effect.waves-light(href= newss.permalink) Read More
-        .col-md-4#right-sidebar
-          include ./includes/_sidebar
+        //- .col-md-4#right-sidebar
+        //-   include ./includes/_sidebar

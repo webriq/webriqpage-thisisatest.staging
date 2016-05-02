@@ -4,40 +4,30 @@ block content
 	.main-continer
 		.container
 			.row.wow.fadeInUp
-				.col-md-8.row#main-content
+				.col-md-12.row#main-content
+					h2.title-header Contact Us
 					form(name='contact-form', method='POST', action='thank-you-page', netlify='netlify')
 						input(type='hidden', name='subject', value='Online Enquiries')
 						.row
 							.input-field.col.s12.m6
-								input#first_name.validate(type='text', name='first name', required='required')
-								label(for='first_name')
-									| First Name
-									sup.materialize-red-text *
+								input#first_name(type='text', placeholder='First Name *', name='first name', required='required')
 							.input-field.col.s12.m6
-								input#last_name.validate(type='text', name='last name', required='required')
-								label(for='last_name')
-									| Last Name
-									sup.materialize-red-text *
+								input#last_name.validate(type='text', placeholder='Last Name *', name='last name', required='required')
+
 						.row
 							.input-field.col.s12.m6
-								input#phone.validate(type='text', name='contact no')
-								label(for='phone') Contact No.
+								input#phone.validate(type='text', placeholder='Contact Number', name='contact no')
 							.input-field.col.s12.m6
-								input#email.validate(type='email', name='replyto', required='required')
-								label(for='email')
-									| Email
-									sup.materialize-red-text *
+								input#email.validate(type='email', placeholder='Email Address', name='replyto', required='required')
 						.row
 							.input-field.col.s12
-								input#address.validate(type='text', name='address')
-								label(for='address') Address
+								input#address.validate(type='text', placeholder='Address', name='address')
 						.row
 							.input-field.col.s12
-								textarea#message.materialize-textarea(name='message')
-								label(for='message') Message
+								textarea#message.materialize-textarea(name='message', placeholder='Enter Your Message')
 						.row
 							.input-field.col.s12
 								button.btn-large.waves-effect.weves-light(type='submit', value='Submit', name='Submit') Submit
 
-				.col-md-4#right-sidebar
-					include ./includes/_sidebar
+				//- .col-md-4#right-sidebar
+				//- 	include ./includes/_sidebar

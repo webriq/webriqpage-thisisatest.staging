@@ -6,7 +6,7 @@ production:
   backend:
     name: github-api
     repo: ayenzky/Business_Template # Path to your Github repository
-    branch: develop # Branch to update (master by default)
+    branch: demo # Branch to update (master by default)
 
 media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 public_folder: "assets"
@@ -31,6 +31,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Author", name: "metauthor", widget: "string"}
               - {label: "Keywords", name: "metakeyword", widget: "string"}
               - {label: "Footer", name: "footer", widget: "markdown"}
+              - {label: "Google Analytics", name: "analytics", widget: "markdown"}
   - name: "slide"
     label: "Image Slider"
     files:
