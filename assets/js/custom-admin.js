@@ -11,10 +11,30 @@ var logo = '/img/logo@xs.png';
 
 
 
-$( document ).ajaxComplete(function() {
+$(function() {
 
 	setTimeout(function(){
-		$('.cms-logo').find('a').html('<img src=' + logo + '>');
+		// $('.cms-logo').find('a').html('<img src=' + logo + '>');
+
+    $('#menu_toggle').click(function () {
+        if ($('body').hasClass('nav-md')) {
+            $('body').removeClass('nav-md').addClass('nav-sm');
+            $('.left_col').removeClass('scroll-view').removeAttr('style');
+            $('.sidebar-footer').hide();
+
+            if ($('#sidebar-menu li').hasClass('active')) {
+                $('#sidebar-menu li.active').addClass('active-sm').removeClass('active');
+            }
+        } else {
+            $('body').removeClass('nav-sm').addClass('nav-md');
+            $('.sidebar-footer').show();
+
+            if ($('#sidebar-menu li').hasClass('active-sm')) {
+                $('#sidebar-menu li.active-sm').addClass('active').removeClass('active-sm');
+            }
+        }
+
+    });
 
 
 
