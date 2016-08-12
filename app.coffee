@@ -7,7 +7,7 @@ records      = require 'roots-records'
 collections  = require 'roots-collections'
 excerpt      = require 'html-excerpt'
 moment       = require 'moment'
-SitemapGenerator = require 'sitemap-generator'
+
 
 
 
