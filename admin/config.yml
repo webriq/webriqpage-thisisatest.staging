@@ -62,6 +62,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Banner", name: "banner", widget: "image", class: "image featured"}
       - {label: "Short Description", name: "shortdesc", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "string"}
       # - name: "listservices"
       #   label: "List Services"
       #   widget: "list"
@@ -78,6 +81,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Banner", name: "banner", widget: "image", class: "image featured", media_folder: "assets/img"}
       - {label: "Short Description", name: "shortdesc", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "string"}
   - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "News"  # Used in the UI, ie.: "New Post"
     folder: "news" # The path to the folder where the documents are stored
@@ -88,7 +94,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Short Description", name: "shortdesc", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
     meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Categories", name: "categories", widget: "string"}
   # - name: "contactus" # Used in routes, ie.: /admin/collections/:slug/edit
   #   label: "Contact Form"  # Used in the UI, ie.: "New Post"

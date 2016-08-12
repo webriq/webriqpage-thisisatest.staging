@@ -2,7 +2,8 @@
 title: Contact Us
 shortdesc: For more information about our services you can contact us through our form below.
 cmsUserSlug: contact-us
-date: now
+date: 2016-08-12T18:33:00+08:00
+categories: ""
 ---
 
 <form name="contact-form" method="POST" action="thank-you-page" netlify="netlify">
