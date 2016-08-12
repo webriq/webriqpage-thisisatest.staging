@@ -7,7 +7,7 @@ records      = require 'roots-records'
 collections  = require 'roots-collections'
 excerpt      = require 'html-excerpt'
 moment       = require 'moment'
-SitemapGenerator = require 'sitemap-generator'
+
 
 monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
 

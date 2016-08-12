@@ -3,6 +3,8 @@ title: Featured Work
 banner: /img/iphone.png
 shortdesc: Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.
 cmsUserSlug: our-services
+date: 2016-08-12T18:33:00+08:00
+categories: ""
 ---
 
 #### Magic of Theme Development
