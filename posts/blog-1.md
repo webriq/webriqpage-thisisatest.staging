@@ -4,7 +4,7 @@ banner: /img/citadel.jpg
 shortdesc: "Finn and Jake follow the Lich to the Citadel, where Finn meets his long lost dad."
 cmsUserSlug: services
 date: 2016-08-12T18:33:00+08:00
-categories: ""
+categories: blog
 ---
 
 <h2 class="title-header">Our Services</h2>
