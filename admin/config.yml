@@ -134,31 +134,17 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Logo", name: "logo", widget: "image", media_folder: "assets/img/partners"}
               - {label: "Website", name: "website", widget: "string"}
-  # - name: "footeritems"
-  #   label: "Contact Section"
-  #   files:
-  #     - name: "footeritems"
-  #       label: "Contat Section"
-  #       file: "data/footer.json"
-  #       description: "contact info"
-  #       fields:
-  #         - label: "Footer"
-  #           name: "footeritems"
-  #           widget: "list"
-  #           fields:
-  #             - {label: "News", name: "html", widget: "markdown"}
-  # - name: "items"
-  #   label: "Sidebar"
-  #   files:
-  #     - name: "sidebar"
-  #       label: "Sidebar"
-  #       file: "data/sidebar.json"
-  #       description: "side bar"
-  #       fields:
-  #         - label: "Sidebar"
-  #           name: "items"
-  #           widget: "list"
-  #           fields:
-  #             - {label: "News", name: "title", widget: "string"}
-  #             - {label: "News", name: "html", widget: "markdown"}
-
+  - name: "filemanager"
+    label: "File Manager"
+    files:
+      - name: "filemanager"
+        label: "File Manager"
+        file: "data/files.json"
+        description: "Add file(image,doc,pdf) here"
+        fields:
+          - label: "File Manager"
+            name: "filemanager"
+            widget: "list"
+            fields:
+              - {label: "File Name", name: "name", widget: "string"}
+              - {label: "File Type", name: "file", widget: "image", media_folder: "assets/files"}

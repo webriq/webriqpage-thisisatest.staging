@@ -31,6 +31,7 @@ module.exports =
       partners: { file: "data/partners.json" }
       footer: { file: "data/footer.json" }
       sidebar: { file: "data/sidebar.json" }
+      files: { file: "data/files.json" }
 
     ),
     collections(folder: 'services', layout: 'post'),
