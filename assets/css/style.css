@@ -35,6 +35,12 @@
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(7) a::before  {
 	  content: "\f0c0"; }
 
+	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(8) a::before  {
+	  content: "\f114"; }
+
+
+
+
 	/**Menu Icons End Here**/
 
 	#main-wrapper .container {
